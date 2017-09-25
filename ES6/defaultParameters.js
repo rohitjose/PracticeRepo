@@ -2,11 +2,13 @@
  * Programming Quiz: Using Default Function Parameters (2-2)
  */
 
-let buildHouse = ({
+function buildHouse({
 	floors = 1,
 	color = 'red',
 	walls = 'brick'
-} = {}) => `Your house has ${floors} floor(s) with ${color} ${walls} walls.`;
+} = {}) {
+	return `Your house has ${floors} floor(s) with ${color} ${walls} walls.`;
+}
 
 //tests
 console.log(buildHouse()); // Your house has 1 floor(s) with red brick walls.
